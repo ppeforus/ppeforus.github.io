@@ -1,0 +1,277 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color: #171717;
+	height:100%;
+}
+a{
+	text-decoration:none;
+}
+a:visited{
+	color:white;
+}
+a:link{
+	color:white;
+}
+a:hover{
+	color:gray;
+}
+@font-face{
+	font-family:Makozin-Italic;
+	src:url('../Fonts/Makozin-MediumItalic.ttf');
+}	
+@font-face{
+	font-family:Makozin-Bold;
+	src:url('../Fonts/Makozin-Bold.ttf');
+}	
+@font-face{
+	font-family:Thin;
+	src:url('../Fonts/typoldcondensedthin.otf');
+}
+@font-face{
+	font-family:Medium;
+	src:url('../Fonts/typoldcondensedmedium.otf');
+}
+.head{
+	background-color:black;
+	height:70px;
+	position:fixed;
+	z-index:20;
+	width:100%;
+}
+.head>p{
+	font-size:80%;
+	float:left;
+	display:inline;
+	margin: 20px 40px 30px 20px;
+	color:white;
+	font-family:Makozin-Italic;
+}
+#navigation-menu>ul{
+	list-style-type:none;
+}
+#navigation-menu>ul>li{
+	float:right;
+	color:white;
+	margin: 10px;
+	margin-top:35px;
+	font-family: Makozin-Bold;
+	font-size:70%;
+}
+#opening{
+	padding-top:90px;
+	height:670px;
+	background-color:#171717;
+	color:white;
+}
+.heading {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+#opening>h1{
+	font-family:Medium;
+	padding-top:150px;
+	padding-left:80px;
+}
+#opening>h3{
+	font-family:Medium;
+	padding-top:50px;
+	padding-left:200px;
+}
+#opening>h2{
+	font-family:Medium;
+	padding-top:50px;
+	padding-left:80px;
+}
+
+/*slideshow*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slideshow {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.slideshow>img{
+	height:300px;
+}
+#content{
+	color:white;
+	margin: 10px 10px 10px 10px;
+	font-family:Thin;
+	line-height:1.8em;
+}
+#information{
+	padding-left:5px;
+	padding-top:5px;
+	padding-right:5px;
+}
+#inline-image{
+	width:100%;
+	padding-bottom:10px;
+}
+#footer{
+	height:80px;
+	background-color:black;
+	padding-bottom:0px;
+}
+
+/**For ipads**/
+
+@media only screen and (min-width: 768px){
+	.head>p{
+	margin: 25px 40px 30px 20px;
+	color:white;
+	font-family:Makozin-Italic;
+	}
+	#navigation-menu>ul>li{
+		margin: 30px 40px 30px 100px;
+		font-family: Makozin-Bold;
+		font-size:70%;
+	}
+	#opening{
+		padding-top:90px;
+		height:750px;
+		background-color:#171717;
+		color:white;
+	}
+	#opening>h1{
+		padding-top:100px;
+		padding-left:160px;
+		font-size:500%;
+	}
+	#opening>h3{
+		padding-top:50px;
+		padding-left:250px;
+		font-size:200%;
+	}
+	#opening>h2{
+		padding-top:50px;
+		padding-left:160px;
+		font-size:250%;
+	}
+	.slideshow>img{
+		height:600px;
+	}
+}
+@media only screen and (min-width: 1000px){
+	.head>p{
+		margin: 25px 40px 30px 20px;
+	}
+	#opening{
+		height:800px;
+	}
+	#opening>h1{
+		padding-top:200px;
+		padding-left:260px;
+	}
+	#opening>h3{
+		padding-left:300px;
+	}
+	#opening>h2{
+		padding-left:260px;
+	}
+	.slideshow-container{
+		margin-top: 30px;
+		width:80%;
+
+	}
+	#content{
+	width:80%;
+	margin:10px auto 10px auto;
+	color:white;
+	font-family:Thin;
+	line-height:1.8em;
+}
+
+}
+
+	
